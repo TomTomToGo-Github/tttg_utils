@@ -60,7 +60,6 @@ class QueryDB:
 
 
 
-
 # Objects of this class can store Database information and fetch the data of loaded queries
 class PGSQL_Query_Class():
     def __init__(self):
@@ -86,11 +85,12 @@ class PGSQL_Query_Class():
             print('            - Connecting to the PostgreSQL database...')
             if self.host == 0:
                 print('You have not loaded the "host" database information to to query object!')
-            conn = psycopg2.connect(host=self.host,
-                                    database=self.dbname,
-                                    user=self.user,
-                                    password=self.password
-                                    )
+            conn = psycopg2.connect(
+                host=self.host,
+                database=self.dbname,
+                user=self.user,
+                password=self.password
+            )
             # create a cursor
             cur = conn.cursor()
             # execute a statement

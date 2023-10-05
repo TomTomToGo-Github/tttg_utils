@@ -10,7 +10,7 @@ setup(
     url="https://github.com/TomTomToGo-Github/tttg_utils",
     author="Thomas Haid",
     author_email="thomas@gmx.net",
-    install_requires=requirements_list
+    install_requires=requirements_list,
     license="MIT",
     packages=[
         "tttg_utils",

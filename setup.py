@@ -5,7 +5,7 @@ with open('requirements.txt', encoding='utf-8') as requs:
 
 setup(
     name="tttg_utils",
-    version="0.1",
+    version="0.2.0",
     description="Utilities for various projects",
     url="https://github.com/TomTomToGo-Github/tttg_utils",
     author="Thomas Haid",
@@ -14,7 +14,10 @@ setup(
     license="MIT",
     packages=[
         "tttg_utils",
+        "tttg_utils.automation",
         "tttg_utils.connectors",
+        "tttg_utils.documents",
+        "tttg_utils.licensing",
     ],
     # zip_safe=False
 )
